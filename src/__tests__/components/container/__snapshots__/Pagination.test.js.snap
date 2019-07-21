@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination wrapper Test <Pagination handlePage="fn()" totalPages=100 currentPageNum=1 dataPerPage=10 /> Should define and render <Pagination /> component 1`] = `ShallowWrapper {}`;

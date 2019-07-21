@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Compaigns test <Compaigns /> Should Defined and render <Compaigns /> component 1`] = `ShallowWrapper {}`;

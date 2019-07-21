@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*************************************************
+INFO : Adform - Technical Challenge
+*************************************************
+Node            : 10.16.0
+Npm             : 6.9.0
+Yarn            : 1.17.3
+react           : 16.8.6
+react-scripts   : 3.0.1
+webpack         : 4.36.1
+boostrap        : 4.3.1
+fontawesome     : 5.9.0
 
-## Available Scripts
 
-In the project directory, you can run:
+*************************************************
+PROJECT QUICK SETUP 
+*************************************************
 
-### `npm start`
+Step-1 : clone the GitHub repository.
+git clone https://github.com/AjayArul/technical-challenge-from-adform.git
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Step-2 : execute following commands to run the Application
+//run yarn to intall the packages
+`yarn`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+//run `yarn dev` or `yarn build` command to create public folder with all files.
+`yarn dev` or `yarn build` 
 
-### `npm test`
+//run locally (note: before run `yarn start` run above command)
+`yarn start`
+now you can access app from http://localhost:8080
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+//Unit test
+`yarn test`
+to get the test suites
 
-### `npm run build`
+`yarn test:coverage`
+to get the total report
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+and also you can view the html report from
+/coverage/lcov-report/index.html
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*************************************************
+APPLICATION GUIDE
+*************************************************
 
-### `npm run eject`
+this campaigns app has 2 pages, one is home another one is campaigns.
+you can navigate both pages from the header navigation link.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Home-Page: just a welcome page with animated welcome text.
+Campaigns-Page: companigns table with filter.
+        1 - default 10  companigns listed.
+        2 -  you can add new companigns in array format from browser inspect.
+            eg: `window.AddCampaigns([{"id":24,"name":"Ajay","startDate":"1/1/2019","endDate":"12/12/2019","budget":88377000},
+            {"id":25,"name":"Arul","startDate":"11/21/2019","endDate":"11/21/2020","budget":608},
+            {"id":26,"name":"Ajay Arul","startDate":"1/1/2018","endDate":"6/20/2018","budget":239507}])`
+        3 - you can filler by stat-date, end-date and companigns name.
+        4 - you can reset the filter by clicking reset-icon.
+        5 - pagination - if more than 10 data pagination will display.
