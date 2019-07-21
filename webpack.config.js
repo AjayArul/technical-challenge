@@ -1,4 +1,5 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const buildPath = 'public';
@@ -71,7 +72,7 @@ module.exports = {
             }
         ]
     },
-    plugins: [HtmlWebpackPluginConf],
+    plugins: [new CleanWebpackPlugin(), HtmlWebpackPluginConf],
     devServer: {
         contentBase: buildPath,
         inline: true,

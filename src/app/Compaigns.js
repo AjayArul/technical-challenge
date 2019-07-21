@@ -50,6 +50,7 @@ class Components  extends Component{
   }
 
   render() {
+    console.log(this.state.dataList)
     return (
       <div className="container mb-5">
         <h2 className='mt-3'> Campaigns </h2>
