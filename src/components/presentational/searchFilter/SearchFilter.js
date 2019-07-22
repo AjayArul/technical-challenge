@@ -18,7 +18,7 @@ const SearchFilter = (props) => {
                             placeholder="Start Date"
                             aria-label="Start Date"
                             aria-describedby="start-date"
-                            max={props.searchLabels[0]}
+                            max={props.searchLabels[1]}
                             onChange={props.handleSerach('startDate')}
                         />
                     </div>
@@ -34,7 +34,7 @@ const SearchFilter = (props) => {
                             placeholder="End Date"
                             aria-label="End Date" 
                             aria-describedby="end-date"
-                            min={props.startDate}
+                            min={props.searchLabels[0]}
                             onChange={props.handleSerach('endDate')}
                         />
                     </div>
