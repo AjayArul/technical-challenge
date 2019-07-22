@@ -1,5 +1,4 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const buildPath = 'public';
@@ -23,7 +22,7 @@ module.exports = {
     },
     output: {
         path: BUILD_DIR,
-        filename: '[name]-[hash].js',
+        filename: '[name]-[hash].js'
     },
     module: {
         rules: [
@@ -72,7 +71,7 @@ module.exports = {
             }
         ]
     },
-    plugins: [new CleanWebpackPlugin(), HtmlWebpackPluginConf],
+    plugins: [HtmlWebpackPluginConf],
     devServer: {
         contentBase: buildPath,
         inline: true,

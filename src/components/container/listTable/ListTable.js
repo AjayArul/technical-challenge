@@ -30,7 +30,8 @@ class ListTable extends Component {
     // on change of filter fields this method will update the state
     onSearch = key => e => {
         this.setState({
-            [key]: e.target.value
+            [key]: e.target.value,
+            pageNumber:1
         }, () => {
             this.doSearch()
         })
