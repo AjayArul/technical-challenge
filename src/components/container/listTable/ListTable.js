@@ -48,10 +48,10 @@ class ListTable extends Component {
             const endSelectedDate = dateFormat(endDate, DATE_FORMAT)
             let  valid = true
 
-            if (startDate && startListDate <= startSelectedDate) {
+            if (startDate && startListDate < startSelectedDate) {
                 valid = false
             }
-            if (endDate && endListDate >= endSelectedDate){
+            if (endDate && endListDate > endSelectedDate){
                 valid =false
             }
             if (this.state.searchKey) {
