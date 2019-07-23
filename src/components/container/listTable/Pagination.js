@@ -29,7 +29,7 @@ class Pagination extends Component {
             </button>
           </div>
           <div className="pag-label">
-            <span className="first"> {currentPageNum}</span> of <span className="total">{totalPages}</span>
+            <span>Page </span><span className="first"> {currentPageNum}</span> of <span className="total">{totalPages}</span>
           </div>
           <div className="control right">
             <button id="nexPage" type="button" aria-label="next page" title="Next Page" disabled={currentPageNum == totalPages ? true : false} onClick={this.nextPage.bind(this)}>

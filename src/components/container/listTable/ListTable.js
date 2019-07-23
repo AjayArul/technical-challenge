@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import dateFormat from 'dateformat'
 import { DATE_FORMAT } from './../../../Constants'
-import SearchFilter from './../../presentational/searchFilter/SearchFilter'
+import SearchFilter from './SearchFilter'
 import Pagination from './Pagination'
 import {array} from 'prop-types'
 import './listTable.scss'
@@ -162,7 +162,7 @@ class ListTable extends Component {
                     (errorFilter && (startDate !== '' || endDate !== '' || searchKey.toLowerCase() !== '')) && 
                         <p className='text-danger'>0  matching Campaigns. try another term.</p>
                 }    
-                <div className='table-responsive'> 
+                <div className='table-responsive compaignsTable'> 
                     <table className="table table-striped table-hover">
                         {this.renderTableHeader()}
                         {   
