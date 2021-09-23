@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{52:function(e,n,a){"use strict";a.r(n);var c=a(0),t=a.n(c);n.default=function(){return t.a.createElement("div",{className:"container-fluid welcome"},t.a.createElement("span",null," welcome "))}}}]);
